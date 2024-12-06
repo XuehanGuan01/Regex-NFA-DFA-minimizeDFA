@@ -1,7 +1,7 @@
 # Regex-NFA-DFA-minimizedDFA
 Compiler principle design, a regular expression into NFA, NFA into DFA, DFA and then simplified to minimize the DFA project
 
-## 实验 DFA生成器
+## SCNU 编译原理实验 DFA生成器
 
 ## 一、实验内容：
 (1) 设计一个应用软件，以实现将正则表达式-->NFA--->DFA-->DFA最小化
