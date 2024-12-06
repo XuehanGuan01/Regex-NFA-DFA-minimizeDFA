@@ -55,6 +55,7 @@ python3.9
 
 ## 七、测试案例
 Regular Expression: ab(((ba)*|bbb)*|a)*b
+
 ***        NFA TABLE        ***   
 +-------+-----+-----+---------+
 | state |  a  |  b  | epsilon |
