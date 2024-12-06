@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/09091794-53c3-421b-8e85-55a50359b0a3)# Regex-NFA-DFA-minimizedDFA
 Compiler principle design, a regular expression into NFA, NFA into DFA, DFA and then simplified to minimize the DFA project
 
 ## SCNU 编译原理实验 DFA生成器
