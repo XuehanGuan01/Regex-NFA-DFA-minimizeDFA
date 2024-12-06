@@ -1,4 +1,4 @@
-# Regex-NFA-DFA-minimizedDFA
+![image](https://github.com/user-attachments/assets/09091794-53c3-421b-8e85-55a50359b0a3)# Regex-NFA-DFA-minimizedDFA
 Compiler principle design, a regular expression into NFA, NFA into DFA, DFA and then simplified to minimize the DFA project
 
 ## SCNU 编译原理实验 DFA生成器
@@ -56,66 +56,7 @@ python3.9
 ## 七、测试案例
 Regular Expression: ab(((ba)*|bbb)*|a)*b
 
-***        NFA TABLE        ***   
-+-------+-----+-----+---------+
-| state |  a  |  b  | epsilon |
-+-------+-----+-----+---------+
-|   0   |  1  | non |   non   |
-|   1   | non | non |    2    |
-|   2   | non |  3  |   non   |
-|   3   | non | non |   24    |
-|  24   | non | non |  25,22  |
-|  23   | non | non |  25,22  |
-|  22   | non | non |  18,20  |
-|  19   | non | non |   23    |
-|  21   | non | non |   23    |
-|  18   | non | non |  19,16  |
-|  17   | non | non |  19,16  |
-|  16   | non | non |  8,10   |
-|   9   | non | non |   17    |
-|  15   | non | non |   17    |
-|   8   | non | non |   9,4   |
-|   7   | non | non |   9,4   |
-|   4   | non |  5  |   non   |
-|   5   | non | non |    6    |
-|   6   |  7  | non |   non   |
-|  10   | non | 11  |   non   |
-|  11   | non | non |   12    |
-|  12   | non | 13  |   non   |
-|  13   | non | non |   14    |
-|  14   | non | 15  |   non   |
-|  20   | 21  | non |   non   |
-|  25   | non | non |   26    |
-|  26   | non | 27  |   non   |
-+-------+-----+-----+---------+
-Start state: 0
-End state: 27
+![屏幕截图 2024-12-06 141715](https://github.com/user-attachments/assets/9225f3d1-e566-4955-8c55-b7807f003c4d)
 
-***   DFA TABLE   ***   
-+-------+-----+-----+
-| state |  a  |  b  |
-+-------+-----+-----+
-|   0   |  2  |  6  |
-|   1   |  2  |  6  |
-|   2   |  2  |  6  |
-|   3   | non |  1  |
-|   4   | non |  5  |
-|   5   |  2  |  6  |
-|   6   |  0  |  4  |
-|   7   |  3  | non |
-+-------+-----+-----+
+![image](https://github.com/user-attachments/assets/334c26d1-ffe7-4579-9274-401e7341b928)
 
-***  Minimized DFA TABLE  ***
-+---------+-----+-----+
-| state   | b   | a   |
-+=========+=====+=====+
-| S0      | S4  | non |
-+---------+-----+-----+
-| S1      | S0  | S4  |
-+---------+-----+-----+
-| S2      | non | S3  |
-+---------+-----+-----+
-| S3      | S4  | non |
-+---------+-----+-----+
-| S4      | S1  | S4  |
-+---------+-----+-----+
